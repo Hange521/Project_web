@@ -7,13 +7,19 @@
     <title>Signup</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
+<style>
+    .btn btn-primary{
+        padding: 20px;
+        display: flex;
+    }
+</style>
 <body>
     <div class="container">
         <h2>Signup</h2>
         <form method="post">
             {% csrf_token %}
             {{ form.as_p }}
-            <button type="submit" class="btn btn-primary">Signup</button>
+            <button type="submit" class="btn btn-primary" >Signup</button>
         </form>
     </div>
 </body>

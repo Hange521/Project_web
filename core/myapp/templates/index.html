@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{% block title %} Portfolio {% endblock %}</title>
+  <title> Portfolio Karl </title>
 
   <!-- 
     - favicon
@@ -831,8 +831,8 @@
 
         </div>
 
-        <form action="" class="contact-form">
-
+        <form method="POST" action="{% url 'home' %}" class="contact-form">
+        {% csrf_token %}
           <div class="form-wrapper">
 
             <label for="name" class="form-label">Name</label>
@@ -847,7 +847,7 @@
 
           </div>
 
-          <div class="form-wrapper">
+          <!-- <div class="form-wrapper">
 
             <label for="email" class="form-label">Email</label>
 
@@ -858,7 +858,7 @@
 
               <ion-icon name="mail"></ion-icon>
 
-            </div>
+            </div> -->
 
           </div>
 
